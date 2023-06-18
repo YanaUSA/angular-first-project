@@ -52,14 +52,17 @@
 
   &.easy {
     background-color: red;
+    border: 2px solid lightgray;
   }
 
   &.medium {
     background-color: yellow;
+    border: 2px solid lightgray;
   }
 
   &.strong {
     background-color: green;
+    border: 2px solid lightgray;
   }
 }
 
