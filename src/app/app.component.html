@@ -1,0 +1,60 @@
+<div>
+  <div class="container">
+    <form class="form">
+      <fieldset class="fieldset">
+        <legend class="legend" [ngStyle]="{ color: 'blue' }">
+          {{ legendName | titlecase }}
+        </legend>
+        <label for="passwordInput">
+          <input
+            class="input-password"
+            type="text"
+            id="strengthDisp"
+            placeholder="Type your password"
+            (input)="inputHandler($event)"
+          />
+        </label>
+        <div class="span-container">
+          <span id="strength-disp" class="circle"></span>
+          <span id="strength-disp" class="circle"></span>
+          <span id="strength-disp" class="circle"></span>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</div>
+
+<!-- let strongPassword = new
+RegExp('(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{8,})') let
+mediumPassword = new
+RegExp('((?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{6,}))|((?=.*[a-z])(?=.*[A-Z])(?=.*[^A-Za-z0-9])(?=.{8,}))') -->
+
+<!-- let timeout;
+let password = document.getElementById('PassEntry');
+let strengthBadge = document.getElementById('StrengthDisp');
+let strongPassword = new RegExp('(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{8,})')
+let mediumPassword = new RegExp('((?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{6,}))|((?=.*[a-z])(?=.*[A-Z])(?=.*[^A-Za-z0-9])(?=.{8,}))') -->
+
+<!-- if (password.length < 8) {
+  alert({backgroundColor: red"}); 
+} -->
+
+<!-- const regex = (?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{8,}); -->
+
+<!-- function isPasswordValid(password) {    
+    const unicodeRange = "\\u0100-\\u0105";
+    const regex = ["A-Z","a-z","\\d","!$#%",unicodeRange];
+
+    // check whether it doesn't include other characters
+    const re = new RegExp("^[" + criteria.join("") +"]{6,}$");
+    if(!re.test(password)) return false;
+
+    const minSatisfiedCondition = 3;
+    const satisfiedCount = 0;
+    for( const i=0; i < criteria.length; i++) {
+      re = new RegExp("[" + criteria[i] + "]");
+      if(re.test(password)) ++satisfiedCount;
+
+    }
+    return (satisfiedCount >= minSatisfiedCondition);
+}​ -->
